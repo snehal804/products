@@ -1,0 +1,45 @@
+<br><br><br>
+<table border="1">
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Action</th>
+    
+        </tr>
+        <tr *ngFor="let e of res">
+            <td>{{e.catid}}</td>
+            <td>{{e.pname}}</td>
+            <td>{{e.pcompany}}</td>
+            <td><input type="button" value="action" (click)="onclick(e.id)"></td>
+        </tr>
+    </table>
+    {{res|json}}
+    <br><br><br>
+<table border="1">
+        <tr>
+            <th>Product Id</th>
+            <th>Name</th>
+            <th>Colour</th>
+            <th>Size</th>
+            <th>Material</th>
+            <th>Price</th>
+            <th>Action</th>
+    
+        </tr>
+        <tr *ngFor="let e of response">
+            <!-- <td>{{e._id}}</td> -->
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.colour}}</td>
+            <td>{{e.size}}</td>
+            <td>{{e.material}}</td>
+            <td>{{e.price}}</td>
+            <td><input type="button" value="ADD TO CART" (click)="oncartclick(e)"></td>
+        </tr>
+    </table>
+    
+    
+     {{response|json}} 
+
+    

@@ -1,0 +1,33 @@
+  {{response|json}}  
+<br><br><br>
+<table border="1">
+    <tr>
+        <th>Category Id</th>
+        <th>Category</th>
+        <th>Action</th>
+    </tr>
+<tr *ngFor="let e of response">
+    <!-- <td>{{e._id}}</td> -->
+    <td>{{e.id}}</td>
+    <td>{{e.category}}</td>
+    <td><input type="button" name="submit" value="action" (click)="onclick(e.id)"></td>
+</tr>
+</table>
+
+
+
+
+<!-- <table border="1">
+    <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Brand</th>
+
+    </tr>
+    <tr *ngFor="let e of res">
+        <td>{{e.pid}}</td>
+        <td>{{e.pname}}</td>
+        <td>{{e.pcompany}}</td>
+        <td><input type="button" value="action" (click)="onclick()"></td>
+    </tr>
+</table> -->
